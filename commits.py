@@ -7,6 +7,7 @@ while True:
     print("4 - Divisão interira")
     print("5 - Divisão com resto")
     print("6 - Equação Quadrática")
+    print("0 - Sair do Programa")
     menu = int(input("Escolha a opção que deseja: "))
 
     if menu == 1:
@@ -45,3 +46,20 @@ while True:
        result1 = x * x
        result2 = y * y
        print("O resultado é: ",result1, "para n1 ao quadrado e ",result2, "para n2 ao quadrado.")
+
+    elif menu == 0:
+        print("Saindo do software...")
+        break
+
+    else:
+        print("Opção invalida, encerrando programa")
+        break
+
+    print("Deseja continuar utilizando o software?")
+    print("1 - Sim")
+    print("2 - Não")
+    continuar = int(input("Escolha a opção desejada: "))
+    
+    if continuar != 1:
+        print("Encerrando o programa.")
+        break

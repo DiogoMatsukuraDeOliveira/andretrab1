@@ -17,6 +17,7 @@ while True:
     print("4 - Divisão interira")
     print("5 - Divisão com resto")
     print("6 - Equação Quadrática")
+    print("7 - Histórico")
     print("0 - Sair do Programa")
     menu = int(input("Escolha a opção que deseja: "))
 
@@ -65,6 +66,14 @@ while True:
        result2 = y * y
        print("O resultado é: ",result1, "para n1 ao quadrado e ",result2, "para n2 ao quadrado.")
        historico.append(f"Elevação ao quadrado: {x}^2 = {result1}, {y}^2 = {result2}")
+    
+    elif menu == 7:
+       print("Histórico de Cálculos:")
+       if historico:
+           for item in historico:
+               print(item)
+       else:
+           print("Nenhum cálculo realizado ainda.")
 
     elif menu == 0:
         print("Saindo do software...")

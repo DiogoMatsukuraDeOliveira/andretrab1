@@ -1,11 +1,12 @@
 while True:
     print("Este é um software de calculos matemáticos, abaixo é o menu que exibe as opções para escolha de equação.")
     print("Selecione a operação:")
-    print("1. Soma")
-    print("2. Subtração")
-    print("3. Multiplicação")
-    print("4. Divisão")
-    print("5. Equação Quadrática")
+    print("1 - Soma")
+    print("2 - Subtração")
+    print("3 - Multiplicação")
+    print("4 - Divisão interira")
+    print("5 - Divisão com resto")
+    print("6 - Equação Quadrática")
     menu = int(input("Escolha a opção que deseja: "))
 
     if menu == 1:
@@ -33,6 +34,12 @@ while True:
        print("O resultado é: ",result)
 
     elif menu == 5:
+       x = int(input("Qual o primeiro N?"))
+       y = int(input("Qual o segundo N?"))
+       result = x % y
+       print("O resto da sua divisão é: ",result)   
+
+    elif menu == 6:
        x = int(input("Qual o primeiro N?"))
        y = int(input("Qual o segundo N?"))
        result1 = x * x

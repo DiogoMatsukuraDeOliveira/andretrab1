@@ -5,6 +5,8 @@ def limpar_tela():
         os.system('cls')
     else:  
         os.system('clear')
+
+historico = []
 #Peguei no chatgpt, não sabia como fazia isso#
 while True:
     print("Este é um software de calculos matemáticos, abaixo é o menu que exibe as opções para escolha de equação.")
@@ -23,30 +25,38 @@ while True:
        y = int(input("Qual o segundo N: "))
        result = x + y
        print("O resultado é: ",result)
+       historico.append(f"Soma: {x} + {y} = {result}")
 
     elif menu == 2:
        x = int(input("Qual o primeiro N: "))
        y = int(input("Qual o segundo N: "))
        result = x - y
        print("O resultado é: ",result)
+       historico.append(f"Subtração: {x} - {y} = {result}")
 
     elif menu == 3:
        x = int(input("Qual o primeiro N: "))
        y = int(input("Qual o segundo N: "))
        result = x * y
        print("O resultado é: ",result)
+       historico.append(f"Subtração: {x} * {y} = {result}")
 
     elif menu == 4:
        x = int(input("Qual o primeiro N: "))
        y = int(input("Qual o segundo N: "))
        result = x / y
        print("O resultado é: ",result)
+       historico.append(f"Divisão: {x} / {y} = {result}")
+       if x or y == 0:
+        print("Divisão por Zero não permitida.")
+   
 
     elif menu == 5:
        x = int(input("Qual o primeiro N: "))
        y = int(input("Qual o segundo N: "))
        result = x % y
        print("O resto da sua divisão é: ",result)   
+       historico.append(f"Divisão: {x} % {y} = {result}")
 
     elif menu == 6:
        x = int(input("Qual o primeiro N: "))
@@ -54,6 +64,7 @@ while True:
        result1 = x * x
        result2 = y * y
        print("O resultado é: ",result1, "para n1 ao quadrado e ",result2, "para n2 ao quadrado.")
+       historico.append(f"Elevação ao quadrado: {x}^2 = {result1}, {y}^2 = {result2}")
 
     elif menu == 0:
         print("Saindo do software...")

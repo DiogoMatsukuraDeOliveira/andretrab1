@@ -8,4 +8,19 @@ print("5. Equação Quadrática")
 menu = int(input("Escolha a opção que deseja: "))
 
 if menu == 1:
-    
+    x = int(input("Qual o primeiro N?"))
+    y = int(input("Qual o segundo N?"))
+    result = x + y
+    print("O resultado é: ",result)
+
+elif menu == 2:
+    x = int(input("Qual o primeiro N?"))
+    y = int(input("Qual o segundo N?"))
+    result = x - y
+    print("O resultado é: ",result)
+
+elif menu == 3:
+    x = int(input("Qual o primeiro N?"))
+    y = int(input("Qual o segundo N?"))
+    result = x * y
+    print("O resultado é: ",result)

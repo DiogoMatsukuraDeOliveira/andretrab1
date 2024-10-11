@@ -6,8 +6,8 @@ def limpar_tela():
     else:  
         os.system('clear')
 
-historico = []
 #Peguei no chatgpt, não sabia como fazia isso#
+historico = []
 while True:
     print("Este é um software de calculos matemáticos, abaixo é o menu que exibe as opções para escolha de equação.")
     print("Selecione a operação:")
@@ -19,6 +19,7 @@ while True:
     print("6 - Equação Quadrática")
     print("7 - Histórico")
     print("0 - Sair do Programa")
+    print()
     menu = int(input("Escolha a opção que deseja: "))
 
     if menu == 1:
@@ -83,6 +84,7 @@ while True:
         print("Opção invalida, encerrando programa...")
         break
 
+    print()
     print("Deseja continuar utilizando o software?")
     print("1 - Sim")
     print("2 - Não")
@@ -91,5 +93,5 @@ while True:
     if continuar == 1:
         limpar_tela()
     else:
-        print("Encerrando o programa.")
+        print("Encerrando o programa...")
         break

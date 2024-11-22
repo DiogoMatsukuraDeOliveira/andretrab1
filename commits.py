@@ -46,7 +46,7 @@ while True:
     elif menu == 4:
        x = int(input("Qual o primeiro N: "))
        y = int(input("Qual o segundo N: "))
-       result = x / y
+       result = x // y
        print("O resultado é: ",result)
        historico.append(f"Divisão: {x} / {y} = {result}")
        if x or y == 0:
